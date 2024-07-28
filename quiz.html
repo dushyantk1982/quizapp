@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #fff;
+            display:flex;
+            justify-content: center;
+        }
+
+        /*---------------------------------------- Main Container ---------------------------------------------- */
+        .container{
+            margin-top: 80px;
+            height: 80vh;
+            width: 800px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*---------------------------------------- Div for logo ---------------------------------------------- */
+        .quiz_name{
+            height: 20px;
+        }
+        .quiz_name > span{
+            font-size: 15px;
+            color: black;
+        }
+
+        .time_marks{
+            height: 50px;
+            width: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            justify-content:space-between;
+        }
+        .time_marks > .time{
+            height: 25px;
+            color: #1FA8E7;
+            font-weight: bold;
+            border: 2px solid #1FA8E7;
+            border-radius: 25px;
+            vertical-align:middle;
+        }
+        .time_marks > .score > .score_head{
+            height: 25px;
+            color: #2F0700;
+            font-size: 18px;
+        }
+        .time_marks > .score > .score_no{
+            height: 25px;
+            color: #2F0700;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        .question{
+            height: 100px;
+            width: 700px;
+            border: 2px solid #C2AF91;
+            border-radius: 10px;
+        }
+        .question > p{
+            margin: 10px;
+            text-align: justify;
+        }
+        .answer{
+            height: 100px;
+            width: 450px;
+            margin-top: 20px;
+        }
+        .answer > .setcion1{
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .answer > .setcion1 > button{
+            height: 40px;
+            width: 200px;
+            background-color: #FFF;
+            color: #1FA8E7;
+            border: 2px solid #1FA8E7;
+            border-radius: 50px;
+        }
+        .answer > .setcion1 > button:hover{
+            background-color: #1FA8E7;
+            color: #FFF;
+            cursor: pointer;
+        }
+        .answer > .setcion2{
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .answer > .setcion2 > button{
+            height: 40px;
+            width: 200px;
+            background-color: #FFF;
+            color: #1FA8E7;
+            border: 2px solid #1FA8E7;
+            border-radius: 50px;
+        }
+        .answer > .setcion2 > button:hover{
+            background-color: #1FA8E7;
+            color: #FFF;
+            cursor: pointer;
+        }
+       .next{
+        height: 50px;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .next > button{
+        height: 40px;
+            width: 200px;
+            background-color:#1FA8E7;
+            color: #FFF;
+            border: 1px solid #1FA8E7;
+            border-radius: 50px;
+            margin-left: 10px;
+            
+       }
+       .next > button:hover{
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quiz_name">
+            <span>Quiz head</span>
+        </div>
+        <div class="time_marks">
+            <span class="time">Timer</span>
+            <div class="score">
+                <span class="score_head">SCORE:</span> <span class="score_no">10</span>
+            </div>
+            
+        </div>
+        <div class="question">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga at, dolorum officia velit voluptas. Voluptatibus, optio repellendus pariatur mollitia libero, architecto doloribus voluptatum perferendis velit eaque dicta eligendi harum!</p>
+        </div>
+        <div class="answer">
+            <div class="setcion1">
+                <button>Option1</button>
+                <button>Option2</button>
+            </div>
+            <div class="setcion2">
+                <button>Option3</button>
+                <button>Option4</button>
+            </div>
+        </div>
+        <div class="next">
+            <button>Next Question</button>
+        </div>
+    </div>
+</body>
+</html>

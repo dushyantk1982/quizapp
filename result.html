@@ -4,107 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        body{
-            background-color: #fff;
-            display:flex;
-            justify-content: center;
-        }
-
-        /*---------------------------------------- Main Container ---------------------------------------------- */
-        .container{
-            margin-top: 80px;
-            height: 80vh;
-            width: 800px;
-            border: 2px solid gray;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px lightgray;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .quiz_result{
-            height: 50px;
-        }
-        .quiz_result > span{
-            font-size: 40px;
-            color:#1FA8E7;
-            font-weight: bold;
-        }
-        .user_result{
-            height: 30px;
-            display: flex;
-            flex-direction: row;
-        }
-        .user_result > .user_name > span{
-            font-weight: bold;
-        }
-        .user_result > .user_text > span{
-            margin-left: 10px;
-        }
-        .total_time{
-            height: 30px;
-            display: flex;
-            flex-direction: row; 
-        }
-        .total_time > .total_time_text{
-            color: black;
-        }
-        .total_time > .taken_time > span{
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        .total_time > .time_second > span{
-            margin-left: 5px;
-        }
-        .total_questions{
-            height: 30px;
-            display: flex;
-            flex-direction: row;
-        }
-        .total_questions > .question_text > span{
-            color: black;
-        }
-        .total_questions > .question_no > span{
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        .attempt_questions{
-            height: 30px;
-            display: flex;
-            flex-direction: row; 
-        }
-        .attempt_questions> .attempt_no > span{
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        .correct_questions{
-            height: 30px;
-            display: flex;
-            flex-direction: row;
-        }
-        .correct_questions > .correct_no > span{
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        .wrong_questions{
-            height: 30px;
-            display: flex;
-            flex-direction: row; 
-        }
-        .wrong_questions > .wrong_no > span{
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./css/resultstyle.css">
 </head>
 <body>
     <div class="container">
@@ -113,7 +13,7 @@
         </div>
         <div class="user_result">
             <div class="user_name">
-                <span>Dushyant</span>
+                <span id="name"></span>
             </div>
             <div class="user_text">
                 <span>your result is:</span>
@@ -124,7 +24,7 @@
                 <span>Total Time Taken:</span>
             </div>
             <div class="taken_time">
-                <span>110</span>
+                <span id="timeTaken"></span>
             </div>
             <div class="time_second">
                 <span>Second</span>
@@ -135,7 +35,7 @@
                 <span>Total Question:</span>
             </div>
             <div class="question_no">
-                <span>10</span>
+                <span id="totalQuestion"></span>
             </div>
         </div>
         <div class="attempt_questions">
@@ -143,7 +43,7 @@
                 <span>Attempt:</span>
             </div>
             <div class="attempt_no">
-                <span>10</span>
+                <span id="attempt"></span>
             </div>
         </div>
         <div class="correct_questions">
@@ -151,7 +51,7 @@
                 <span>Correct:</span>
             </div>
             <div class="correct_no">
-                <span>5</span>
+                <span id="correct"></span>
             </div>
         </div>
         <div class="wrong_questions">
@@ -159,7 +59,7 @@
                 <span>Wrong:</span>
             </div>
             <div class="wrong_no">
-                <span>5</span>
+                <span id="wrongAnswer"></span>
             </div>
         </div>
         <div class="percent">
@@ -167,13 +67,15 @@
                 <span>Percentage:</span>
             </div>
             <div class="percent_no">
-                <span>50.00%</span>
+                <span id="percentage"></span>.00%
             </div>
         </div>
         <div class="buttons">
-            <button>Start Again</button>
-            <button>Go To Home</button>
+            <button onclick="again()">Start Again</button>
+            <button onclick="home()">Go To Home</button>
         </div>
     </div>
+    
+    <script src="./javascript/resultscript.js"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+}
+
+/*---------------------------------------- Main Container ---------------------------------------------- */
+.container{
+    margin-top: 80px;
+    height: 80vh;
+    width: 800px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------- Div for logo ---------------------------------------------- */
+.logo{
+    height: 80px;
+    width: 100%;
+}
+.logo > img{
+    height: 50px;
+    width: 50px;
+    margin-left: 48%;
+}
+.logo > .logo_name{
+    margin-left: 45%;
+}
+.logo > .logo_name > .left{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.logo > .logo_name > .right{
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: #02B7C4;
+}
+
+/*---------------------------------------- User Lable ---------------------------------------------- */
+.user_label{
+    height: 50px;
+    /* margin-left: 40%; */
+}
+.user_label > span{
+    font-size: 40px;
+    font-weight: bold;
+    color: #1FA8E7;
+}
+.user_lable_message{
+    height:30px;
+}
+.user_lable_message > span{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+/*---------------------------------------- Input User Div ---------------------------------------------- */
+.input_user{
+    height: 40px;
+}
+.input_user > input{
+    height: 25px;
+    width: 500px;
+    border:0.5px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #DEDEDE;
+}
+.input_user > button{
+    height: 25px;
+    width: 100px;
+    background-color: #1FA8E7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.message{
+    height: 30px;
+}
+.message > span{
+    font-size: 15px;
+    color: #969595;
+}
+
+/*---------------------------------------- Horizontal Line ---------------------------------------------- */
+.line{
+    height: 40px;
+    width: 700px;
+    border-top: 2px solid #B5B5B5;
+    border-radius: 5px;
+}
+
+/*---------------------------------------- Category Section ---------------------------------------------- */
+.select_category > span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1FA8E7;
+}
+.categories{
+    height: 100px;
+    width: 400px;
+}
+.section1{
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.section1 > button{
+    height: 40px;
+    width: 200px;
+    background-color: #EBF9FF;
+    border: 1px solid #1FA8E7;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.section2{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.section2 > button{
+    height: 40px;
+    width: 200px;
+    background-color: #EBF9FF;
+    border: 1px solid #1FA8E7;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}

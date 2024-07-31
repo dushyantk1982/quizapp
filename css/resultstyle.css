@@ -1,0 +1,124 @@
+/* -------------------------------- CSS on Body -------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+}
+
+/*---------------------------------------- Main Container ---------------------------------------------- */
+.container{
+    margin-top: 80px;
+    height: 80vh;
+    width: 800px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------- Result Div ---------------------------------------------------- */
+.quiz_result{
+    height: 50px;
+}
+.quiz_result > span{
+    font-size: 40px;
+    color:#1FA8E7;
+    font-weight: bold;
+}
+.user_result{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.user_result > .user_name > span{
+    font-weight: bold;
+}
+.user_result > .user_text > span{
+    margin-left: 10px;
+}
+.total_time{
+    height: 30px;
+    display: flex;
+    flex-direction: row; 
+}
+.total_time > .total_time_text{
+    color: black;
+}
+.total_time > .taken_time > span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.total_time > .time_second > span{
+    margin-left: 5px;
+}
+.total_questions{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.total_questions > .question_text > span{
+    color: black;
+}
+.total_questions > .question_no > span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.attempt_questions{
+    height: 30px;
+    display: flex;
+    flex-direction: row; 
+}
+.attempt_questions> .attempt_no > span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.correct_questions{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.correct_questions > .correct_no > span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.wrong_questions{
+    height: 30px;
+    display: flex;
+    flex-direction: row; 
+}
+.wrong_questions > .wrong_no > span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.percent{
+    height: 30px;
+    display: flex;
+    flex-direction: row; 
+}
+.percent > .percent_no{
+    margin-left: 10px;
+    font-weight: bold;
+}
+/* ----------------------------------------------- CSS for Buttons ----------------------------------- */
+.buttons > button{
+    height: 40px;
+    width: 150px;
+    background-color: #1FA8E7;
+    color: #fff;
+    border: 1px solid #1FA8E7;
+    border-radius: 10px;
+}
+.buttons > button:hover{
+    background-color: #97d2ed;
+    color:black;
+    cursor: pointer;
+}
